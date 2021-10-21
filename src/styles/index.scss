@@ -2,5 +2,38 @@
 @import 'globals';
 
 body {
-  background-color: $favColor !important;
+  background-color: rgb(19, 39, 79) !important;
+}
+
+.routes {
+ display: inline grid;
+ margin: 10px;
+ place-items: center;
+
+  .btn {
+    margin: 5px;
+  }
+
+  .btn-danger {
+    float: right;
+  }
+}
+
+.rosterStyle {
+  .btn {
+    float: left;
+  }
+}
+
+.page-headers {
+  display: grid;
+  place-items: center;
+  color: rgb(206, 17, 65);
+  margin-bottom: 50px;
+}
+
+.search-bar {
+  width: 500px;
+margin-left: 250px;
+margin-right: 5px;
 }
