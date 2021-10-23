@@ -1,5 +1,6 @@
 @import '~@fortawesome/fontawesome-free/css/all.min.css';
 @import 'globals';
+@import url('https://fonts.googleapis.com/css2?family=Meie+Script&display=swap');
 
 body {
   background-color: rgb(19, 39, 79) !important;
@@ -25,15 +26,42 @@ body {
   }
 }
 
+.welcome-header {
+  color: rgb(206, 17, 65);
+  font-family: 'Meie Script', cursive;
+}
+
 .page-headers {
   display: grid;
   place-items: center;
   color: rgb(206, 17, 65);
   margin-bottom: 50px;
+  font-family: 'Meie Script', cursive;
 }
 
 .search-bar {
   width: 500px;
-margin-left: 250px;
-margin-right: 5px;
+  margin-left: 250px;
+  margin-right: 5px;
+}
+
+.player-info {
+  display: flex;
+  flex-flow: row wrap;
+  text-align: center;
+  margin: auto;
+  justify-content: center;
+  display: inline-block;
+}
+
+.player-form {
+  margin: 20px;
+  .search-bar {
+    margin: 10px;
+  }
+
+  .dropDown {
+    margin: 10px;
+    height: 30px;
+  }
 }

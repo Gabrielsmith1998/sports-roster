@@ -32,7 +32,13 @@ export default function SportsRoster({
         >
           EDIT
         </button>
-        {player.name}
+        <div className="player-info">
+          <div className="player-image">
+            <img src={player.image} alt="sports player" />
+          </div>
+          {player.name} <br />
+          Postion: {player.position}
+        </div>
         <button
           onClick={() => handleClick('delete')}
           className="btn btn-danger"
@@ -49,6 +55,8 @@ export default function SportsRoster({
 SportsRoster.propTypes = {
   player: PropTypes.shape({
     name: PropTypes.string,
+    image: PropTypes.string,
+    position: PropTypes.string,
     firebaseKey: PropTypes.string,
     uid: PropTypes.string,
   }).isRequired,
